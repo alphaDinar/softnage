@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --theme: #00bac9;
+  --paddingLR: 10%;
+  --secondary: #8c8c8c;
+  --dark: #2A2A2A;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.title{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}

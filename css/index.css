@@ -1,0 +1,771 @@
+.topBar {
+  width: 80%;
+  padding: 1vh var(--paddingLR);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topBar {
+  background: var(--theme);
+}
+
+.logoBox {
+  padding: 2vh var(--paddingLR);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoBox img {
+  width: 250px;
+}
+
+.logoBox .contact {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.logoBox .contact hr {
+  height: 50px;
+  border-right: 1px dotted var(--secondary);
+}
+
+.logoBox .contact article {
+  display: flex;
+  align-items: center;
+  gap: 0 0.4rem;
+}
+
+.logoBox .contact article p {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary);
+}
+
+.logoBox .contact article a {
+  color: var(--secondary);
+}
+
+#contactLink {
+  background: var(--theme);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+
+.headBox {
+  width: 80%;
+  height: 50vh;
+  position: relative;
+  padding: 0 var(--paddingLR);
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.navToggle {
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  background: whitesmoke;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.headNav {
+  width: 100%;
+  position: absolute;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.headNav section {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.headNav section i {
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+.headNav .left {
+  justify-content: flex-end;
+  border-right: 1px solid whitesmoke;
+}
+
+.headNav .right {
+  justify-content: flex-start;
+  border-left: 1px solid whitesmoke;
+}
+
+.headNav .right i {
+  background: rgba(255, 255, 255, 0.361);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.dropLi {
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.dropLi span,
+.mainLink {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+}
+
+.dropLi p {
+  position: absolute;
+  top: 30px;
+  padding: 30px;
+  width: max-content;
+  background: var(--dark);
+  border-radius: 3px;
+  display: flex;
+  color: black;
+  opacity: 0;
+  transition: 0.2s ease;
+  cursor: pointer;
+  gap: 1rem;
+  color: black;
+}
+
+.dropLi p a {
+  font-size: 0rem;
+  color: var(--secondary);
+  transition: 0.1s ease;
+}
+
+.dropLi p.change {
+  opacity: 1;
+}
+
+.dropLi p.change a {
+  font-size: 1rem;
+}
+
+.dropLi p.change a:hover {
+  color: white;
+}
+
+.dropLi,
+.dropLi p {
+  flex-direction: column;
+}
+
+.introBox {
+  padding: 2.5vh var(--paddingLR);
+  text-align: center;
+}
+
+.introBox strong {
+  font-size: 1.6rem;
+}
+
+.serviceBox {
+  width: 80%;
+  padding: 0 var(--paddingLR);
+  display: flex;
+  margin-bottom: 10vh;
+  justify-content: space-between;
+}
+
+
+
+.service sup {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background: var(--theme);
+}
+
+.service {
+  width: 280px;
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.service strong {
+  font-size: 1.2rem;
+}
+
+.service i {
+  font-size: 6rem;
+  display: flex;
+  color: var(--theme);
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid var(--theme);
+}
+
+.service strong sub {
+  height: 3px;
+  width: 20px;
+  display: block;
+  background: var(--secondary);
+}
+
+.quoteBox {
+  width: 80%;
+  padding: 5vh 10%;
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark);
+  text-align: center;
+}
+
+.clientSwiper {
+  width: 100%;
+}
+
+.clientBox {
+  width: 60%;
+  margin: 5vh 0;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.clientBox .swiper-slide div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientBox img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+}
+
+.clientBox div span {
+  font-size: 0.9rem;
+  border-top: 1px dotted var(--secondary);
+  color: var(--secondary);
+}
+
+.skillBox {
+  width: 80%;
+  margin: 2vh 0;
+  padding: 0vh var(--paddingLR);
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  align-items: center;
+}
+
+.skillBox article {
+  text-align: left;
+  max-width: 900px;
+}
+
+.skillBox video {
+  max-height: 400px;
+}
+
+ul {
+  list-style: none;
+}
+
+.productBox {
+  width: 80%;
+  padding: 3vh 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productBox strong{
+  font-size: 2rem;
+  margin-bottom: 70px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product {
+  position: relative;
+  width: 250px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid lightgray;
+  transition: 0.4s ease;
+}
+
+.product:hover {
+  transform: translateY(-30px);
+}
+
+.product strong {
+  font-size: 1.2rem;
+}
+
+.product article {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.product li {
+  display: flex;
+  gap: 0 0.3rem;
+  color: var(--secondary);
+  align-items: center;
+}
+
+.product small {
+
+  font-size: 0.9rem;
+}
+
+.product img:nth-child(1) {
+  border: 1px solid lightgray;
+  position: absolute;
+  background: white;
+  top: -30px;
+  left: -15px;
+  height: 50px;
+}
+
+.product img:nth-child(2) {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+
+.infoBox {
+  display: flex;
+  gap: 60px;
+}
+
+.info {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  border: 2px solid var(--theme);
+  color: var(--theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  rotate: -45deg;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  padding: 20px;
+  background: var(--dark);
+  position: relative;
+}
+
+.contactInfo div:nth-child(1) {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.contactInfo div:nth-child(2) {
+  display: flex;
+  color: var(--theme);
+}
+
+.contactInfo span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactInfo input {
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.contactInfo a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: var(--theme);
+}
+
+.contactInfo .imgBoxHolder {
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  width: 150px;
+  background: var(--dark);
+  height: 150px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.contactInfo .imgBox {
+  position: absolute;
+  right: -150px;
+  padding: 5px;
+  width: 290px;
+  display: flex;
+
+}
+
+.contactInfo .imgBox legend {
+  position: absolute;
+  width: 50%;
+  background: white;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contactInfo .imgBox img {
+  z-index: 10;
+}
+
+.contactBox {
+  width: 80%;
+  padding: calc(5vh + 100px) 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.contactBox form {
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.contactBox section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactBox div {
+  width: 100%;
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+
+.contact div span {
+  font-size: 1.1rem;
+}
+
+.contactBox form input,
+.contactBox form textarea {
+  width: 90%;
+  padding: 5px 5%;
+  resize: none;
+  border-radius: 5px;
+  background: rgb(239, 239, 239);
+}
+
+.contactBox form input {
+  height: 30px;
+}
+
+.contactBox form textarea {
+  height: 100px;
+}
+
+.contactBox strong {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.contactBox strong sub {
+  width: 40px;
+  height: 3px;
+  background: var(--dark);
+  display: block;
+}
+
+.contactBox form button {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: var(--theme);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+@media all and (max-width:1530px) {
+  .serviceBox {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .service {
+    margin: auto;
+  }
+}
+
+@media all and (max-width:1450px) {
+  .contactBox {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+@media all and (max-width:1300px) {
+  .clientBox {
+    width: 80%;
+    padding: 0 10%;
+  }
+}
+
+@media all and (max-width:1100px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+
+  .product {
+    margin: auto;
+  }
+}
+
+@media all and (max-width:1000px) {
+  .contactBox {
+    padding: 5vh 10%;
+  }
+
+  .contactBox .contactInfo {
+    background: white;
+  }
+
+  .contactBox .contactInfo div {
+    background: var(--dark);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .contactBox .imgBoxHolder {
+    top: revert;
+    position: relative;
+  }
+
+  .contactInfo {
+    align-items: center;
+    width: 100%;
+  }
+
+  .contactInfo .imgBoxHolder {
+    right: revert;
+    background: transparent;
+    width: auto;
+  }
+}
+
+@media all and (max-width:850px) {
+  .headNav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .headNav .left,
+  .headNav .right {
+    justify-content: center;
+    border: none;
+  }
+
+  .skillBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skillBox video {
+    margin: auto;
+  }
+}
+
+@media all and (max-width:800px) {
+  .logoBox {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width:700px) {
+  .infoBox {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width:550px) {
+  .contactBox section {
+    width: 100%;
+  }
+
+  .contactBox form {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+}
+
+@media all and (max-width:500px) {
+  .topBar {
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .logoBox .contact {
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .logoBox .contact hr {
+    display: none;
+  }
+
+  .logoBox,
+  .topBar {
+    position: relative;
+    z-index: 100;
+  }
+
+  .headBox {
+    z-index: 10;
+  }
+
+  .navToggle {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .headNav {
+    left: -500px;
+    transition: 0.4s ease;
+    top: 50px;
+  }
+
+  .headNav.change {
+    background: whitesmoke;
+    left: 0;
+  }
+
+  .headNav .mid {
+    flex-direction: column;
+  }
+
+  .headNav section i {
+    color: var(--dark);
+  }
+
+  .dropLi span,
+  .mainLink {
+    color: var(--dark);
+  }
+
+  .contactInfo .imgBoxHolder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactInfo .imgBox {
+    width: 80%;
+    padding: 0;
+    right: revert;
+  }
+
+  .skillBox video {
+    width: 100%;
+    max-height: revert;
+  }
+}
+
+@media all and (max-width:350px) {
+  .serviceBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    width: 80%;
+    padding: 10px 10%;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    width: 80%;
+    padding: 20px 10%;
+  }
+}
